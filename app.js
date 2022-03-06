@@ -5,6 +5,8 @@ let monthOfBirth=document.getElementById("month");
 let birthday=document.getElementById("day");
 let gender=document.getElementById("yeah")
 let buttonEl=document.getElementById("button-el");
+let akanEl=document.getElementById("akan");
+console.log(akanEl)
 let maleNames={"Sunday":"Kwasi",
                "Monday":"Kwadwo",
                "Tuesday":"Kwabena",
@@ -54,34 +56,34 @@ function nameAllocated(){
     let genders=gender.value;
     let dayBorn=birthday.value;
     if(genders==="Male"&&dayBorn==="Sunday"){
-         alert(`Your Akan name is ${maleNames.Sunday}`);
+        akanEl.innerText=`${maleNames.Sunday}`;
     }else if(genders==="Male"&&dayBorn==="Monday"){
-        alert(`Your Akan name is ${maleNames.Monday}`);
+        akanEl.innerText=`${maleNames.Monday}`;
    }else if(genders==="Male"&&dayBorn==="Tuesday"){
-    alert(`Your Akan name is ${maleNames.Tuesday}`);
+        akanEl.innerText=`${maleNames.Tuesday}`;
    }else if(genders==="Male"&&dayBorn==="Wednesday"){
-    alert(`Your Akan name is ${maleNames.Wednesday}`);
+        akanEl.innerText=`${maleNames.Wednesday}`; 
    }else if(genders==="Male"&&dayBorn==="Thursday"){
-    alert(`Your Akan name is ${maleNames.Thursday}`);
+        akanEl.innerText=`${maleNames.Thursday}`;
    }else if(genders==="Male"&&dayBorn==="Friday"){
-    alert(`Your Akan name is ${maleNames.Friday}`);
+        akanEl.innerText=`${maleNames.Friday}`;
    }else if(genders==="Male"&&dayBorn==="Saturday"){
-    alert(`Your Akan name is ${maleNames.Saturday}`);
+        akanEl.innerText=`${maleNames.Saturday}`;
    }else if(genders==="Female"&&dayBorn==="Sunday"){
-    alert(`Your Akan name is ${femaleNames[0]}`);
+        akanEl.innerText=`${femaleNames[0]}`;
    }else if(genders==="Female"&&dayBorn==="Monday"){
-    alert(`Your Akan name is ${femaleNames[1]}`);
+        akanEl.innerText=`${femaleNames[1]}`;
    }else if(genders==="Female"&&dayBorn==="Tuesday"){
-    alert(`Your Akan name is ${femaleNames[2]}`);
+        akanEl.innerText=`${femaleNames[2]}`;
    }else if(genders==="Female"&&dayBorn==="Wednesday"){
-    alert(`Your Akan name is ${femaleNames[3]}`);
+        akanEl.innerText=`${femaleNames[3]}`;
    }else if(genders==="Female"&&dayBorn==="Thursday"){
-    alert(`Your Akan name is ${femaleNames[4]}`);
+        akanEl.innerText=`${femaleNames[4]}`;
    }else if(genders==="Female"&&dayBorn==="Friday"){
-    alert(`Your Akan name is ${femaleNames[5]}`);
+        akanEl.innerText=`${femaleNames[5]}`; 
    }else if(genders==="Female"&&dayBorn==="Saturday"){
-    alert(`Your Akan name is ${femaleNames[6]}`);
+         akanEl.innerText=`${femaleNames[6]}`;
    }else{
-       alert("Invalid day entry try again");
+        akanEl.innerText="Invalid entry please try again";
    }
 }
