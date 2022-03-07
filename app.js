@@ -30,7 +30,12 @@ formEl.addEventListener("submit",(x)=>{
 })
 //click event handler for the button 
 buttonEl.addEventListener("click",()=>{
-    nameAllocated();
+    if(checkedInputs){
+        nameAllocated();
+    }else{
+        alert("Invalid input try again")
+    }
+    
 });
 //The following function checks valid user input
 function checkedInputs(){
