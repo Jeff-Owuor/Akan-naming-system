@@ -1,7 +1,5 @@
 let formEl=document.querySelector(".formation");
-let centuryOfBirth=document.getElementById("century");
-let yearOfBirth=document.getElementById("year");
-let monthOfBirth=document.getElementById("month");
+let anotherDate=document.getElementById("another")
 let birthday=document.getElementById("day");
 let gender=document.getElementById("yeah")
 let buttonEl=document.getElementById("button-el");
@@ -39,17 +37,9 @@ buttonEl.addEventListener("click",()=>{
 });
 //The following function checks valid user input
 function checkedInputs(){
-    let century=centuryOfBirth.value;
-    let year=yearOfBirth.value;
-    let month=monthOfBirth.value;
+   console.log(date)
     let day=birthday.value;
-    if(century=""||century<1||century>21){
-        render.innerText="Invalid input try again";
-    }else if(year<0||year>99){
-        render2.innerText="Invalid input try again";
-    }else if(month<1||month>12){
-        render3.innerText="Invalid input try again";
-    }else if(day==""){
+     if(day==""){
         render4.innerText="Invalid input try again";
     }
     else{
